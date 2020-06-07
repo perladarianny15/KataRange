@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataRange", "KataRange\KataRange.csproj", "{2390BE9A-EEF4-46C5-8456-1AEBF72DBC06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataRangeUTest", "KataRangeUTest\KataRangeUTest.csproj", "{EA702129-EC2E-4DDC-8447-6CD1FFB6E465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2390BE9A-EEF4-46C5-8456-1AEBF72DBC06}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{2390BE9A-EEF4-46C5-8456-1AEBF72DBC06}.Debug|anycpu.Build.0 = Debug|anycpu
+		{2390BE9A-EEF4-46C5-8456-1AEBF72DBC06}.Release|anycpu.ActiveCfg = Release|anycpu
+		{2390BE9A-EEF4-46C5-8456-1AEBF72DBC06}.Release|anycpu.Build.0 = Release|anycpu
+		{EA702129-EC2E-4DDC-8447-6CD1FFB6E465}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{EA702129-EC2E-4DDC-8447-6CD1FFB6E465}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{EA702129-EC2E-4DDC-8447-6CD1FFB6E465}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{EA702129-EC2E-4DDC-8447-6CD1FFB6E465}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
