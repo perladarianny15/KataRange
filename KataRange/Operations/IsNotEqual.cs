@@ -8,15 +8,25 @@ namespace KataRange
     {
         #region IsNotEqual
         
-        public static bool Get(string FirstValue, string SecondValue )
+        public static string Get(string FirstValue, string SecondValue )
         {
             bool Result = false;
+            string CheckIsEmpty = string.Empty;
+
+            if (string.IsNullOrEmpty(FirstValue))
+            {
+                return CheckIsEmpty;
+            }
+            else
+            {
+                return "valor";
+            }
 
             if (!FirstValue.Equals(SecondValue))
             {
                 Result = true;
             }
-            return Result;
+            return CheckIsEmpty;
         }
 
         #endregion

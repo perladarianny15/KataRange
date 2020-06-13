@@ -86,7 +86,7 @@ namespace KataRange
             List<string> ResultList = new List<string>();
 
             Console.WriteLine("\t\t ---GetConstructors--- \t\t\t");
-            Console.WriteLine("Range \t\t" + "Delimn \t\t" + "Output \t \n");
+            Console.WriteLine("Range \t\t" + "Delimn \t\t" + "Output\t");
 
             for (int i = 0; i < RangeList.Count(); i++)
             {
@@ -102,9 +102,9 @@ namespace KataRange
                    .Select(match => match.Value)
                    .ToArray();
 
-                delimitersResult = string.Join("\t", delimiters);
-                itemsResult = string.Join("\t", items);
-                CompleteResult = $"{Range} \t\t {delimitersResult} \t {itemsResult}";
+                delimitersResult = string.Join(" ", delimiters);
+                itemsResult = string.Join(" ", items);
+                CompleteResult = $"{Range} \t\t {delimitersResult} \t\t {itemsResult}";
                 ResultList.Add(CompleteResult);
             }
 

@@ -19,6 +19,11 @@ namespace KataRange
 
             delimitersResult = string.Join("", delimiters);
 
+            if (string.IsNullOrEmpty(Range))
+            {
+                Result = true;
+            }
+
             if (delimitersResult == "()")
             {
                 Result = true;

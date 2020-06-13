@@ -11,12 +11,13 @@ namespace KataRange
 
         #region Constains
 
-        public static bool Get(string Points, int[] Parameter, string RangePattern)
+        public static string Get(string Points, int[] Parameter, string RangePattern)
         {
             string delimitersResult = string.Empty;
             int RangeFirstNumber, RangeSecondNumber = 0;
 
             bool ContainsResult, Result = true;
+            string CheckNull = string.Empty;
 
             #region OutputList
             List<bool> FirstResultList = new List<bool>();
@@ -41,6 +42,12 @@ namespace KataRange
             RangeFirstNumber = Convert.ToInt32(items[0]);
 
             RangeSecondNumber = Convert.ToInt32(items[1]);
+
+            if(Parameter == null)
+            {
+                CheckNull = null;
+                return CheckNull;
+            }
             switch (delimitersResult)
             {
                 case "()":
@@ -52,6 +59,7 @@ namespace KataRange
                     if (FirstResultList.Contains(false))
                     {
                         Result = false;
+                        
                     }
 
                     break;
@@ -96,7 +104,7 @@ namespace KataRange
                     break;
             }
 
-            return Result;
+            return CheckNull;
         }
         #endregion
     }
